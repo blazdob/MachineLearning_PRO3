@@ -1,0 +1,146 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass{beamer}
+
+
+
+\mode<presentation>
+{
+  \usetheme{Boadilla}
+}
+
+
+\usepackage[english]{babel}
+
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+
+
+\title[Strojno učenje] 
+{Strojno učenje}
+
+\author[Križnar Karel, Dobravec Blaž]
+{Križnar Karel \and Dobravec Blaž}
+
+
+\institute
+{
+  Praktična matematika\\
+  Fakulteta za matematiko in fiziko
+}
+\date
+{17.1.2019 / Seminar}
+
+%fotografija
+\pgfdeclareimage[height=1 cm]{university-logo}{photo/logo}
+\logo{\pgfuseimage{university-logo}}
+
+
+
+
+
+\beamerdefaultoverlayspecification{<+->}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+
+
+
+\section{Introduction}
+
+\subsection[Short First Subsection Name]{First Subsection Name}
+
+\begin{frame}
+\frametitle[alignment=center]{Splošno o strojnem učenju} % ne delaaaaaa :(
+  \begin{itemize}
+  \item
+    Umetna inteligenca = strono učenje?
+  \item
+    Kje se strojno učenje uporablja?
+  \item
+    nekaj še nekaj
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Make Titles Informative.}
+
+  You can create overlays\dots
+  \begin{itemize}
+  \item using the \texttt{pause} command:
+    \begin{itemize}
+    \item
+      First item.
+      \pause
+    \item    
+      Second item.
+    \end{itemize}
+  \item
+    using overlay specifications:
+    \begin{itemize}
+    \item<3->
+      First item.
+    \item<4->
+      Second item.
+    \end{itemize}
+  \item
+    using the general \texttt{uncover} command:
+    \begin{itemize}
+      \uncover<5->{\item
+        First item.}
+      \uncover<6->{\item
+        Second item.}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+\subsection{Second Subsection}
+
+\begin{frame}{Make Titles Informative.}
+\end{frame}
+
+\begin{frame}{Make Titles Informative.}
+\end{frame}
+
+
+
+\section*{Summary}
+
+\begin{frame}{Summary}
+
+  % Keep the summary *very short*.
+  \begin{itemize}
+  \item
+    The \alert{first main message} of your talk in one or two lines.
+  \item
+    The \alert{second main message} of your talk in one or two lines.
+  \item
+    Perhaps a \alert{third message}, but not more than that.
+  \end{itemize}
+  
+  % The following outlook is optional.
+  \vskip0pt plus.5fill
+  \begin{itemize}
+  \item
+    Outlook
+    \begin{itemize}
+    \item
+      Something you haven't solved.
+    \item
+      Something else you haven't solved.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+\end{document}
+
+
