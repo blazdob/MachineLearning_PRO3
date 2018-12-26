@@ -16,7 +16,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage{times}
 \usepackage[T1]{fontenc}
-
+\usepackage{graphicx}
+\graphicspath{ {./photo/} }
 
 \title[Strojno učenje] 
 {Strojno učenje}
@@ -56,59 +57,80 @@
 
 \section{Introduction}
 
-\subsection[Short First Subsection Name]{First Subsection Name}
+\subsection[uvod]{Uvod}
 
 \begin{frame}
-\frametitle[alignment=center]{Splošno o strojnem učenju} % ne delaaaaaa :(
+\frametitle[alignment=center]{Splošno} % ne delaaaaaa :(
   \begin{itemize}
   \item
-    Umetna inteligenca = strono učenje?
+    Kaj sploh je strojno učenje?
   \item
     Kje se strojno učenje uporablja?
   \item
-    nekaj še nekaj
+    Umetna inteligenca = strojno učenje?
   \end{itemize}
+\bigskip
+\includegraphics[scale = 0.3]{photo/ucenje_proces}
 \end{frame}
 
-\begin{frame}{Make Titles Informative.}
+\begin{frame}{Tipi strojnega učenja}
+\bigskip
+  Poznamo različne tipe strojnega učenja: \smallskip
 
-  You can create overlays\dots
   \begin{itemize}
-  \item using the \texttt{pause} command:
-    \begin{itemize}
-    \item
-      First item.
-      \pause
-    \item    
-      Second item.
-    \end{itemize}
-  \item
-    using overlay specifications:
-    \begin{itemize}
-    \item<3->
-      First item.
-    \item<4->
-      Second item.
-    \end{itemize}
-  \item
-    using the general \texttt{uncover} command:
-    \begin{itemize}
-      \uncover<5->{\item
-        First item.}
-      \uncover<6->{\item
-        Second item.}
-    \end{itemize}
+  \item 
+    \textbf{Nadzorovano učenje} $\rightarrow Algoritem $\texttt{ uči}  stroj na podlagi podanih parov vhodnih in željenih podatkov. Pri tem željene rezultate določa človek.
+  \item 
+     \textbf{Nenadzorovano učenje} $\rightarrow  Algoritem $\texttt{ razdeli} podatke v več skupin, ki imajo svoje značilnosti. Značilnosti algoritem izlušči iz vhodnih podatkov, brez pomoči človeka.
+  \item 
+     \textbf{Vzpodbujevalno učenje} $\rightarrow Algoritem $\texttt{ se priuči} vedenje oziroma optimizacijo vedenja na podlagi povratne informacije prek nagrajevanja oz. kaznovanja.
   \end{itemize}
 \end{frame}
 
 
-\subsection{Second Subsection}
+\begin{frame}{Uporaba vsakega od tipov}
+  \begin{itemize}
+  \item
+   Nadzorovano učenje
+	\begin{itemize}
+  	\item
+   	  Napovedovanje vremena
+  	\item
+   	  \alert{Klasifikacija fotografij}
+  	\item
+   	  Ocenjevanje nevarnosti
+	\end{itemize}
+  \item
+  Nenadzorovano učenje
+    	\begin{itemize}
+  	\item
+   	  Medicinske raziskave
+  	\item
+   	  \alert{Ciljno in lokacijsko oglaševanje}
+	\end{itemize}
+  \item
+   Vzpodbujevalno učenje
+ 	\begin{itemize}
+  	\item
+   	  Računalniške igre
+  	\item
+   	  \alert{Navigacija robotov}
+  	\item
+   	  Napovedovanje delnic
+	\end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+\subsection{Prepoznavanje števil}
 
 \begin{frame}{Make Titles Informative.}
 \end{frame}
 
 \begin{frame}{Make Titles Informative.}
 \end{frame}
+
+
 
 
 

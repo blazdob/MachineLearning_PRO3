@@ -1,4 +1,4 @@
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
-\beamer@subsectionintoc {1}{1}{First Subsection Name}{2}{0}{1}
-\beamer@subsectionintoc {1}{2}{Second Subsection}{13}{0}{1}
+\beamer@subsectionintoc {1}{1}{Uvod}{2}{0}{1}
+\beamer@subsectionintoc {1}{2}{Prepoznavanje \IeC {\v s}tevil}{19}{0}{1}
