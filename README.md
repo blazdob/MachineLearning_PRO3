@@ -1,4 +1,5 @@
-# StrojnoUčenje_PRO3
+# Strojno Učenje 
+#### Projekt pri Praktični matematiki pri predmetu programiranje 3
 
 Seminar osnov strojnega učenja, za kaj pri njem vbistvu gre in realizacija testnega projekta.
 
