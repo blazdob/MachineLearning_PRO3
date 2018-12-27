@@ -13,7 +13,7 @@ Najbolj osnoven primer prepoznavanja 큄tevil s pomo훾jo preproste nevronske mre�
 Primer je narejen s pomo훾jo knji탑nice "sklean"
 Na ra훾unalnik nalo탑i sklearn:
 
-$ pip install sklearn, pillow
+      $ pip install sklearn, pillow
 
 Nalo탑i tudi knji탑nico pillow, da bo delala tudi metoda "imread"
 
