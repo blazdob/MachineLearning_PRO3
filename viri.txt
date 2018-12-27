@@ -1,3 +1,4 @@
 Tu so dodani viri, iz katerih sva črpala podatke:
 
 - https://www.youtube.com/watch?v=hB6IlpqHy-o
+- https://en.wikipedia.org/wiki/Machine_learning
