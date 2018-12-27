@@ -10,3 +10,10 @@ Najprej predstavitev kaj je strojno učenje in najbolj uporabljene implikacije v
 ## Primer:
 
 Najbolj osnoven primer prepoznavanja števil s pomočjo preproste nevronske mreže in knjižnice podatkov **mnest**.
+Primer je narejen s pomočjo knjižnice "sklean"
+Na računalnik naloži sklearn:
+
+<p> pip install sklearn, pillow </p>
+
+Naloži tudi knjižnico pillow, da bo delala tudi metoda "imread"
+
