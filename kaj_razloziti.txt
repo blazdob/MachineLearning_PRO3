@@ -1,0 +1,22 @@
+Kaj je cilj nevronske mreže:
+- iz vhodih podatkov ocena/klasifikacija
+
+Struktura mreže:
+- vhodna raven 
+- skrite ravni
+- izhodna raven
+- nevron (vozlišče in povezava)
+
+Forward propagation:
+- kaj so vhodni podatki
+- aktivacijska funkscija (tist video k pokaže razliko)
+- formula iz ene plasti v drugo
+- kaj so izhodni podatki
+
+Back propagation:
+- podatki za trening/test
+- primerjava izhodnih podatkov s klasificiranimi podatki 
+- gradient descent
+- popravljanje mreže (odvodi ja? ne? samo omemba?)
+
+Še kakšen primer, verjetno kar tega s številkami
