@@ -59,6 +59,8 @@
 
 \subsection[uvod]{Uvod}
 
+
+%___________________________________________________
 \begin{frame}
 \frametitle[alignment=center]{Splošno} % ne delaaaaaa :(
   \begin{itemize}
@@ -87,7 +89,7 @@
   \end{itemize}
 \end{frame}
 
-
+%___________________________________________________
 \begin{frame}{Uporaba vsakega od tipov}
   \begin{itemize}
   \item
@@ -124,13 +126,141 @@
 
 \subsection{Prepoznavanje števil}
 
-\begin{frame}{Make Titles Informative.}
+%___________________________________________________
+\begin{frame}{Nevronska mreža}
+\begin{itemize}
+ \item
+  Ideja strukture izhaja iz simuliranja delovanja nevronov v možganih
+ \item
+  Nevronska mreža je struktura, ki jo uporabljamo pri "učenju" računalnika
+ \item
+  Poznamo več različic nevronskih mrež
+\end{itemize}
+\begin{center}
+\includegraphics[scale = 0.3]{photo/foto3}
+\includegraphics[scale = 0.3]{photo/nevron}
+\end{center}
+\begin{itemize}
+\item
+nevron je objekt, ki v sebi nosi številko, ki ji pravimo aktivacija nevrona
+\end{itemize}
 \end{frame}
 
-\begin{frame}{Make Titles Informative.}
+%___________________________________________________
+\begin{frame}{Prepoznavanje števil s pomočjo nevronske mreže}
+\begin{itemize}
+\item
+Številka v nevronu pove kakšno barvo ima 0  $\rightarrow $ črn, 1  $\rightarrow $ bel
+\item
+V primeru bomo uporabljali $28*28$ pikslov veliko fotografijo
+\end{itemize}
+\begin{center}
+\includegraphics[scale = 0.45]{photo/foto2}
+\end{center}
 \end{frame}
 
+%___________________________________________________
+\begin{frame}{}
+Aktivacija v zadnjem stolpcu $\rightarrow$ rezultat oz. kaj računalnik misli, da je na fotografiji
+\begin{center}
+\includegraphics[scale = 0.55]{photo/foto3}
+\end{center}
+\end{frame}
 
+%___________________________________________________
+\begin{frame}{}
+Vmesni stolpci $\rightarrow$ skriti nivoji \\
+\smallskip
+predstavljamo si jih lahko kot neke nivoje, ki pregledujejo nek del fotografije in ga rangirajo.
+\begin{center}
+\includegraphics[scale = 0.55]{photo/foto4}
+\end{center}
+\end{frame}
+
+%___________________________________________________
+\begin{frame}{}
+\begin{math}
+a_1, a_2, a_3, ..., a_{n-1}, a_n
+\end{math}
+$ \rightarrow$ {to so aktivacije v sakemu od nevronom}
+
+\begin{math}
+w_1, w_2, w_3, ..., w_{n-1}, w_n
+\end{math}
+$ \rightarrow$ {to so uteži, na vsaki od povezav} $ \rightarrow$ te na začetku nastavimo poljubno
+
+\begin{center}
+\includegraphics[scale = 0.5]{photo/foto6}
+\end{center}
+\end{frame}
+
+%___________________________________________________
+\begin{frame}{}
+To število je poljubno. \\
+\smallskip
+Želimo si ga omejiti na interval $[1,2]$.\\
+\smallskip
+Uporabimo sigmoidno funkcijo.
+\begin{center}
+\includegraphics[scale = 0.55]{photo/foto7}
+\end{center}
+\end{frame}
+
+%___________________________________________________
+\begin{frame}{}
+Vse skupaj lahko zapišemo v matrični obliki. \\
+\smallskip
+Dodamo še takoimenovani "bias" oziroma korekcijo. \\
+\bigskip
+
+\includegraphics[scale = 0.27]{photo/foto8}
+\includegraphics[scale = 0.3]{photo/foto9} \\
+
+\bigskip
+Imamo natanko 13.002 možnih parametrov, ki jih lahko spreminjamo.
+\end{frame}
+
+%___________________________________________________
+\begin{frame}{}
+Definirajmo cenovno funkcijo, ki bo povedala, kako dobro je računalnik prepoznal število.\\
+\smallskip
+Preverimo vse testne primere (za katere vemo željeni rezultat) in izračunamo kvadrate razlike ter vse skupaj seštejemo.
+\smallskip
+\begin{center}
+\includegraphics[scale = 0.35]{photo/2foto3} \\
+\end{center}
+\smallskip
+Če bo računalnik z zagotovostjo povedal katero število bo to bo cenovna funkcija blizu 0. \\
+\smallskip
+Cenovna funkcija je torej funkcija, ki dobi 13.002 parametra in vrne eno število.
+\end{frame}
+ 
+%___________________________________________________
+\begin{frame}{}
+Predstava funkcijo z eno spremenljivko.\\
+\smallskip
+\begin{center}
+\includegraphics[scale = 0.3]{photo/2foto1} \\
+\end{center}
+
+Želimo minimizirati cenovno funkcijo $\leftarrow$ spreminjamo parametre. \\
+
+Računanje gradienta $\rightarrow$ Izračunamo (parcialne) odvode. \\
+Majhen premik v smeri gradienta $\rightarrow$ ponovno računanje gradienta
+\end{frame}
+
+%___________________________________________________
+\begin{frame}{}
+Iz vseh uteži in korekcij ustvarimo vektor .\\
+\smallskip
+Vektor, ki pa ga dobimo s pomočjo gradienta pa prištejemo prvotnemu vektorju. \\
+
+\begin{center}
+\includegraphics[scale = 0.35]{photo/2foto4} \\
+\end{center}
+
+S tem spremenimo vse te parametre $\rightarrow$ Temu algoritmu pravimo vzvratno razširjanje oz. Backpropagation.
+\end{frame}
 
 
 
