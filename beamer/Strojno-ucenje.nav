@@ -32,13 +32,18 @@
 \headcommand {\beamer@framepages {31}{31}}
 \headcommand {\slideentry {1}{2}{10}{32/32}{Prepoznavanje \IeC {\v s}tevil}{0}}
 \headcommand {\beamer@framepages {32}{32}}
-\headcommand {\sectionentry {2}{Summary}{33}{Summary}{0}}
+\headcommand {\sectionentry {2}{Povzetek}{33}{Povzetek}{0}}
 \headcommand {\beamer@sectionpages {2}{32}}
 \headcommand {\beamer@subsectionpages {19}{32}}
-\headcommand {\slideentry {2}{0}{1}{33/38}{}{0}}
-\headcommand {\beamer@framepages {33}{38}}
-\headcommand {\beamer@partpages {1}{38}}
-\headcommand {\beamer@subsectionpages {33}{38}}
-\headcommand {\beamer@sectionpages {33}{38}}
-\headcommand {\beamer@documentpages {38}}
-\headcommand {\def \inserttotalframenumber {15}}
+\headcommand {\slideentry {2}{0}{1}{33/35}{}{0}}
+\headcommand {\beamer@framepages {33}{35}}
+\headcommand {\sectionentry {3}{Viri}{36}{Viri}{0}}
+\headcommand {\beamer@sectionpages {33}{35}}
+\headcommand {\beamer@subsectionpages {33}{35}}
+\headcommand {\slideentry {3}{0}{1}{36/39}{}{0}}
+\headcommand {\beamer@framepages {36}{39}}
+\headcommand {\beamer@partpages {1}{39}}
+\headcommand {\beamer@subsectionpages {36}{39}}
+\headcommand {\beamer@sectionpages {36}{39}}
+\headcommand {\beamer@documentpages {39}}
+\headcommand {\def \inserttotalframenumber {16}}
